@@ -112,9 +112,16 @@ struct PercentageView: View {
                     .percentage(pct, style: .sliding)
             }
             
-            Text("🕛 Happy New Year 🎉🎇🎆💥!")
+            Spacer()
+            
+            Text("Happy New Year 🎉🎇🍾!")
                 .font(.system(size: 30))
                 .percentage(pct, style: .sliding)
+                .border(Color.red, width: 2)
+                .padding(8)
+            
+            
+            Spacer()
             
             HStack(spacing: 40) {
                 
@@ -125,11 +132,26 @@ struct PercentageView: View {
                     .frame(width: 100, height: 100)
                     .percentage(pct, style: .sliding)
                 
-                Text("🤪")
+                Text("🎆")
                     .font(.system(size: 100))
                     .padding(20)
                     .percentage(pct, style: .circular)
             }
+            
+            HStack(spacing: 40) {
+                Rectangle()
+                    .frame(width: 40, height: 100)
+                    .foregroundColor(.red)
+                    .percentage(pct, style: .sliding)
+                    .border(Color.yellow, width: 2)
+                    .rotationEffect(Angle(degrees: 180))
+                
+                Text("🦠")
+                    .font(.system(size: 100))
+                    .padding(20)
+                    .percentage(pct, style: .circular)
+            }
+            
         }
         .padding()
         
