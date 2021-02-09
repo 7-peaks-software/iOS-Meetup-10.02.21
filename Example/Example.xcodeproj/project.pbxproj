@@ -11,11 +11,30 @@
 		153AE2DA25C8105E00250763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2D925C8105E00250763 /* ContentView.swift */; };
 		153AE2DC25C8106200250763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153AE2DB25C8106200250763 /* Assets.xcassets */; };
 		153AE2DF25C8106200250763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153AE2DE25C8106200250763 /* Preview Assets.xcassets */; };
-		153AE2EA25C8115100250763 /* PCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2E925C8115100250763 /* PCircle.swift */; };
-		153AE2F025C811D100250763 /* basic-animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2ED25C811D000250763 /* basic-animation.swift */; };
-		153AE2F125C811D100250763 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2EE25C811D000250763 /* Transformation.swift */; };
-		153AE2F225C811D100250763 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2EF25C811D100250763 /* Animatable.swift */; };
-		153AE2F525C8131200250763 /* AnimatableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AE2F425C8131200250763 /* AnimatableModifier.swift */; };
+		52AF933525D288ED005330D2 /* basic-animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF930E25D288ED005330D2 /* basic-animation.swift */; };
+		52AF933625D288ED005330D2 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF930F25D288ED005330D2 /* Transformation.swift */; };
+		52AF933725D288ED005330D2 /* AnimatableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931025D288ED005330D2 /* AnimatableModifier.swift */; };
+		52AF933825D288ED005330D2 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931125D288ED005330D2 /* Animatable.swift */; };
+		52AF933925D288ED005330D2 /* PCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931325D288ED005330D2 /* PCircle.swift */; };
+		52AF933A25D288ED005330D2 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931725D288ED005330D2 /* StateView.swift */; };
+		52AF933B25D288ED005330D2 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931925D288ED005330D2 /* BindingView.swift */; };
+		52AF933C25D288ED005330D2 /* EnvironmentObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931B25D288ED005330D2 /* EnvironmentObjectView.swift */; };
+		52AF933D25D288ED005330D2 /* ObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF931D25D288ED005330D2 /* ObservedObjectView.swift */; };
+		52AF933E25D288ED005330D2 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932025D288ED005330D2 /* OTPView.swift */; };
+		52AF933F25D288ED005330D2 /* PropertyWrapperPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932125D288ED005330D2 /* PropertyWrapperPhoneNumber.swift */; };
+		52AF934025D288ED005330D2 /* PhoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932225D288ED005330D2 /* PhoneValidator.swift */; };
+		52AF934125D288ED005330D2 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932425D288ED005330D2 /* AppSettings.swift */; };
+		52AF934225D288ED005330D2 /* PropertyWrapperUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932525D288ED005330D2 /* PropertyWrapperUserDefaults.swift */; };
+		52AF934325D288ED005330D2 /* PropertyWrapperExampleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932625D288ED005330D2 /* PropertyWrapperExampleDetailView.swift */; };
+		52AF934425D288ED005330D2 /* PropertyWrapperExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932725D288ED005330D2 /* PropertyWrapperExampleView.swift */; };
+		52AF934525D288ED005330D2 /* Part2ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932825D288ED005330D2 /* Part2ContentView.swift */; };
+		52AF934625D288ED005330D2 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932A25D288ED005330D2 /* UserSettings.swift */; };
+		52AF934725D288ED005330D2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932D25D288ED005330D2 /* CarListViewModel.swift */; };
+		52AF934825D288ED005330D2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF932F25D288ED005330D2 /* Car.swift */; };
+		52AF934925D288ED005330D2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933125D288ED005330D2 /* DetailView.swift */; };
+		52AF934A25D288ED005330D2 /* MVVMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933225D288ED005330D2 /* MVVMContentView.swift */; };
+		52AF934B25D288ED005330D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933325D288ED005330D2 /* LoginView.swift */; };
+		52AF934C25D288ED005330D2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933425D288ED005330D2 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +44,30 @@
 		153AE2DB25C8106200250763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153AE2DE25C8106200250763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		153AE2E025C8106200250763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		153AE2E925C8115100250763 /* PCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCircle.swift; sourceTree = "<group>"; };
-		153AE2ED25C811D000250763 /* basic-animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "basic-animation.swift"; sourceTree = "<group>"; };
-		153AE2EE25C811D000250763 /* Transformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
-		153AE2EF25C811D100250763 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
-		153AE2F425C8131200250763 /* AnimatableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableModifier.swift; sourceTree = "<group>"; };
+		52AF930E25D288ED005330D2 /* basic-animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "basic-animation.swift"; sourceTree = "<group>"; };
+		52AF930F25D288ED005330D2 /* Transformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
+		52AF931025D288ED005330D2 /* AnimatableModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableModifier.swift; sourceTree = "<group>"; };
+		52AF931125D288ED005330D2 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		52AF931325D288ED005330D2 /* PCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCircle.swift; sourceTree = "<group>"; };
+		52AF931725D288ED005330D2 /* StateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		52AF931925D288ED005330D2 /* BindingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		52AF931B25D288ED005330D2 /* EnvironmentObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectView.swift; sourceTree = "<group>"; };
+		52AF931D25D288ED005330D2 /* ObservedObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservedObjectView.swift; sourceTree = "<group>"; };
+		52AF932025D288ED005330D2 /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		52AF932125D288ED005330D2 /* PropertyWrapperPhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperPhoneNumber.swift; sourceTree = "<group>"; };
+		52AF932225D288ED005330D2 /* PhoneValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneValidator.swift; sourceTree = "<group>"; };
+		52AF932425D288ED005330D2 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		52AF932525D288ED005330D2 /* PropertyWrapperUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperUserDefaults.swift; sourceTree = "<group>"; };
+		52AF932625D288ED005330D2 /* PropertyWrapperExampleDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperExampleDetailView.swift; sourceTree = "<group>"; };
+		52AF932725D288ED005330D2 /* PropertyWrapperExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperExampleView.swift; sourceTree = "<group>"; };
+		52AF932825D288ED005330D2 /* Part2ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Part2ContentView.swift; sourceTree = "<group>"; };
+		52AF932A25D288ED005330D2 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		52AF932D25D288ED005330D2 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		52AF932F25D288ED005330D2 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		52AF933125D288ED005330D2 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		52AF933225D288ED005330D2 /* MVVMContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMContentView.swift; sourceTree = "<group>"; };
+		52AF933325D288ED005330D2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		52AF933425D288ED005330D2 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +100,9 @@
 		153AE2D625C8105E00250763 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				153AE2E825C8113600250763 /* Common */,
-				153AE2EC25C811B000250763 /* Part1-Animation */,
+				52AF931225D288ED005330D2 /* Common */,
+				52AF930D25D288ED005330D2 /* Part1-Animation */,
+				52AF931425D288ED005330D2 /* Part2-PropertyWrappers */,
 				153AE2D725C8105E00250763 /* ExampleApp.swift */,
 				153AE2D925C8105E00250763 /* ContentView.swift */,
 				153AE2DB25C8106200250763 /* Assets.xcassets */,
@@ -81,23 +120,153 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		153AE2E825C8113600250763 /* Common */ = {
+		52AF930D25D288ED005330D2 /* Part1-Animation */ = {
 			isa = PBXGroup;
 			children = (
-				153AE2E925C8115100250763 /* PCircle.swift */,
+				52AF930E25D288ED005330D2 /* basic-animation.swift */,
+				52AF930F25D288ED005330D2 /* Transformation.swift */,
+				52AF931025D288ED005330D2 /* AnimatableModifier.swift */,
+				52AF931125D288ED005330D2 /* Animatable.swift */,
+			);
+			path = "Part1-Animation";
+			sourceTree = "<group>";
+		};
+		52AF931225D288ED005330D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931325D288ED005330D2 /* PCircle.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		153AE2EC25C811B000250763 /* Part1-Animation */ = {
+		52AF931425D288ED005330D2 /* Part2-PropertyWrappers */ = {
 			isa = PBXGroup;
 			children = (
-				153AE2EF25C811D100250763 /* Animatable.swift */,
-				153AE2EE25C811D000250763 /* Transformation.swift */,
-				153AE2ED25C811D000250763 /* basic-animation.swift */,
-				153AE2F425C8131200250763 /* AnimatableModifier.swift */,
+				52AF931525D288ED005330D2 /* PropertyWrappersSwiftUI */,
+				52AF931E25D288ED005330D2 /* PropertyWrappers */,
+				52AF932825D288ED005330D2 /* Part2ContentView.swift */,
+				52AF932925D288ED005330D2 /* UserSettings */,
+				52AF932B25D288ED005330D2 /* MVVM */,
 			);
-			path = "Part1-Animation";
+			path = "Part2-PropertyWrappers";
+			sourceTree = "<group>";
+		};
+		52AF931525D288ED005330D2 /* PropertyWrappersSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931625D288ED005330D2 /* State */,
+				52AF931825D288ED005330D2 /* Binding */,
+				52AF931A25D288ED005330D2 /* EnvironmentObject */,
+				52AF931C25D288ED005330D2 /* Published & ObservedObject */,
+			);
+			path = PropertyWrappersSwiftUI;
+			sourceTree = "<group>";
+		};
+		52AF931625D288ED005330D2 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931725D288ED005330D2 /* StateView.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		52AF931825D288ED005330D2 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931925D288ED005330D2 /* BindingView.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		52AF931A25D288ED005330D2 /* EnvironmentObject */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931B25D288ED005330D2 /* EnvironmentObjectView.swift */,
+			);
+			path = EnvironmentObject;
+			sourceTree = "<group>";
+		};
+		52AF931C25D288ED005330D2 /* Published & ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931D25D288ED005330D2 /* ObservedObjectView.swift */,
+			);
+			path = "Published & ObservedObject";
+			sourceTree = "<group>";
+		};
+		52AF931E25D288ED005330D2 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				52AF931F25D288ED005330D2 /* Example2 */,
+				52AF932325D288ED005330D2 /* Example1 */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		52AF931F25D288ED005330D2 /* Example2 */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932025D288ED005330D2 /* OTPView.swift */,
+				52AF932125D288ED005330D2 /* PropertyWrapperPhoneNumber.swift */,
+				52AF932225D288ED005330D2 /* PhoneValidator.swift */,
+			);
+			path = Example2;
+			sourceTree = "<group>";
+		};
+		52AF932325D288ED005330D2 /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932425D288ED005330D2 /* AppSettings.swift */,
+				52AF932525D288ED005330D2 /* PropertyWrapperUserDefaults.swift */,
+				52AF932625D288ED005330D2 /* PropertyWrapperExampleDetailView.swift */,
+				52AF932725D288ED005330D2 /* PropertyWrapperExampleView.swift */,
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
+		52AF932925D288ED005330D2 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932A25D288ED005330D2 /* UserSettings.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		52AF932B25D288ED005330D2 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932C25D288ED005330D2 /* ViewModels */,
+				52AF932E25D288ED005330D2 /* Models */,
+				52AF933025D288ED005330D2 /* Views */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		52AF932C25D288ED005330D2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932D25D288ED005330D2 /* CarListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		52AF932E25D288ED005330D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52AF932F25D288ED005330D2 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52AF933025D288ED005330D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52AF933125D288ED005330D2 /* DetailView.swift */,
+				52AF933225D288ED005330D2 /* MVVMContentView.swift */,
+				52AF933325D288ED005330D2 /* LoginView.swift */,
+				52AF933425D288ED005330D2 /* SettingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,13 +339,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153AE2EA25C8115100250763 /* PCircle.swift in Sources */,
-				153AE2F225C811D100250763 /* Animatable.swift in Sources */,
+				52AF933525D288ED005330D2 /* basic-animation.swift in Sources */,
+				52AF934025D288ED005330D2 /* PhoneValidator.swift in Sources */,
+				52AF933825D288ED005330D2 /* Animatable.swift in Sources */,
+				52AF933E25D288ED005330D2 /* OTPView.swift in Sources */,
+				52AF934A25D288ED005330D2 /* MVVMContentView.swift in Sources */,
+				52AF934325D288ED005330D2 /* PropertyWrapperExampleDetailView.swift in Sources */,
+				52AF933925D288ED005330D2 /* PCircle.swift in Sources */,
+				52AF934525D288ED005330D2 /* Part2ContentView.swift in Sources */,
+				52AF933F25D288ED005330D2 /* PropertyWrapperPhoneNumber.swift in Sources */,
+				52AF933725D288ED005330D2 /* AnimatableModifier.swift in Sources */,
 				153AE2DA25C8105E00250763 /* ContentView.swift in Sources */,
+				52AF934125D288ED005330D2 /* AppSettings.swift in Sources */,
+				52AF934425D288ED005330D2 /* PropertyWrapperExampleView.swift in Sources */,
+				52AF934B25D288ED005330D2 /* LoginView.swift in Sources */,
+				52AF933C25D288ED005330D2 /* EnvironmentObjectView.swift in Sources */,
+				52AF934625D288ED005330D2 /* UserSettings.swift in Sources */,
+				52AF934725D288ED005330D2 /* CarListViewModel.swift in Sources */,
+				52AF933625D288ED005330D2 /* Transformation.swift in Sources */,
+				52AF934225D288ED005330D2 /* PropertyWrapperUserDefaults.swift in Sources */,
+				52AF934925D288ED005330D2 /* DetailView.swift in Sources */,
+				52AF933A25D288ED005330D2 /* StateView.swift in Sources */,
+				52AF934C25D288ED005330D2 /* SettingView.swift in Sources */,
+				52AF934825D288ED005330D2 /* Car.swift in Sources */,
 				153AE2D825C8105E00250763 /* ExampleApp.swift in Sources */,
-				153AE2F525C8131200250763 /* AnimatableModifier.swift in Sources */,
-				153AE2F025C811D100250763 /* basic-animation.swift in Sources */,
-				153AE2F125C811D100250763 /* Transformation.swift in Sources */,
+				52AF933D25D288ED005330D2 /* ObservedObjectView.swift in Sources */,
+				52AF933B25D288ED005330D2 /* BindingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
