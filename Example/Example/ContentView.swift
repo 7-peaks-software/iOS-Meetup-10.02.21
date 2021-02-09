@@ -35,9 +35,8 @@ struct ContentView: View {
                     )
                 }
                 
-                // TODO: Ton - update the section
-                Section(header: Text("Part 2 - TODO: Ton Update")) {
-                    NavigationLink("Mvvm", destination: EmptyView())
+                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
+                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
                 }
                 
                 // TODO: Andrei - update the section

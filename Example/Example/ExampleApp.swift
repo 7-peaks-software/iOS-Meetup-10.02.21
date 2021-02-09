@@ -26,9 +26,10 @@ import SwiftUI
 
 @main
 struct ExampleApp: App {
+    let userSettings = UserSettings()
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.colorScheme, .dark)
+            ContentView().environment(\.colorScheme, .dark).environmentObject(userSettings)
         }
     }
 }
