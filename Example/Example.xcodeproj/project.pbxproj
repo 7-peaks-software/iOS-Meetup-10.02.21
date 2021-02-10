@@ -331,7 +331,6 @@
 				75215E9C25D3BB6300A1277D /* 1. ObjectWillChange */,
 				75215EB625D3BEB300A1277D /* 2. NavigationLink */,
 				75215E9E25D3BB8F00A1277D /* 3. ObservableObjectAndParameters */,
-				75215ECB25D3BFEA00A1277D /* Backlog */,
 			);
 			path = ObservableObjectSection;
 			sourceTree = "<group>";
@@ -350,12 +349,9 @@
 		75215E9E25D3BB8F00A1277D /* 3. ObservableObjectAndParameters */ = {
 			isa = PBXGroup;
 			children = (
-				75215F4825D3E22300A1277D /* ViewModelProvider.swift */,
-				75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */,
-				75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */,
-				75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */,
-				75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */,
-				75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */,
+				75215F5725D3EBB500A1277D /* 1. StateObject */,
+				75215F5825D3EBBE00A1277D /* 2. ObservedObject */,
+				75215F5A25D3EBCD00A1277D /* 3. Cahced ObservedObject */,
 			);
 			path = "3. ObservableObjectAndParameters";
 			sourceTree = "<group>";
@@ -367,13 +363,6 @@
 				75215F3E25D3DD2000A1277D /* DeepNavigation */,
 			);
 			path = "2. NavigationLink";
-			sourceTree = "<group>";
-		};
-		75215ECB25D3BFEA00A1277D /* Backlog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Backlog;
 			sourceTree = "<group>";
 		};
 		75215F3D25D3DD1100A1277D /* LazyView */ = {
@@ -400,6 +389,33 @@
 				75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */,
 			);
 			path = DeepNavigation;
+			sourceTree = "<group>";
+		};
+		75215F5725D3EBB500A1277D /* 1. StateObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */,
+			);
+			path = "1. StateObject";
+			sourceTree = "<group>";
+		};
+		75215F5825D3EBBE00A1277D /* 2. ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */,
+				75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */,
+			);
+			path = "2. ObservedObject";
+			sourceTree = "<group>";
+		};
+		75215F5A25D3EBCD00A1277D /* 3. Cahced ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215F4825D3E22300A1277D /* ViewModelProvider.swift */,
+				75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */,
+				75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */,
+			);
+			path = "3. Cahced ObservedObject";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
