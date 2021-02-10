@@ -142,9 +142,9 @@
 		52AF931425D288ED005330D2 /* Part2-PropertyWrappers */ = {
 			isa = PBXGroup;
 			children = (
+				52AF932825D288ED005330D2 /* Part2ContentView.swift */,
 				52AF931525D288ED005330D2 /* PropertyWrappersSwiftUI */,
 				52AF931E25D288ED005330D2 /* PropertyWrappers */,
-				52AF932825D288ED005330D2 /* Part2ContentView.swift */,
 				52AF932925D288ED005330D2 /* UserSettings */,
 				52AF932B25D288ED005330D2 /* MVVM */,
 			);
