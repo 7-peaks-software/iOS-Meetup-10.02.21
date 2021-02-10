@@ -33,12 +33,12 @@ class ViewModelProvider {
 	static func cached<VM: AnyObject>(id: ViewModelIdentifier? = nil, _ builder: () -> (VM)) -> VM {
     let key = String(reflecting: VM.self) + String(describing: id)
 		if let vm = cache.object(forKey: key as NSString) {
-//      print("Use cached object: \(key)")
+//            print("Use cached object: \(key)")
 			return vm as! VM
 		} else {
 			let vm = builder()
 			cache.setObject(vm, forKey: key as NSString)
-//      print("create new object: \(key)")
+//            print("create new object: \(key)")
 			return vm
 		}
 	}

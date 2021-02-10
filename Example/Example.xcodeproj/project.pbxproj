@@ -56,6 +56,8 @@
 		75215F2F25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */; };
 		75215F4225D3DD5500A1277D /* DeepNavigationChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4125D3DD5500A1277D /* DeepNavigationChildView.swift */; };
 		75215F4925D3E22300A1277D /* ViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4825D3E22300A1277D /* ViewModelProvider.swift */; };
+		75215F4D25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */; };
+		75215F5025D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.2.3 DeepNavigationCustomRouterView.swift"; sourceTree = "<group>"; };
 		75215F4125D3DD5500A1277D /* DeepNavigationChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepNavigationChildView.swift; sourceTree = "<group>"; };
 		75215F4825D3E22300A1277D /* ViewModelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProvider.swift; sourceTree = "<group>"; };
+		75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.2 NonCachedDetailsView.swift"; sourceTree = "<group>"; };
+		75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.3 CachedDetailsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,7 +353,9 @@
 				75215F4825D3E22300A1277D /* ViewModelProvider.swift */,
 				75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */,
 				75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */,
+				75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */,
 				75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */,
+				75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */,
 			);
 			path = "3. ObservableObjectAndParameters";
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				52AF933C25D288ED005330D2 /* EnvironmentObjectView.swift in Sources */,
 				52AF934625D288ED005330D2 /* UserSettings.swift in Sources */,
 				75215EBC25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift in Sources */,
+				75215F5025D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift in Sources */,
 				75215F4225D3DD5500A1277D /* DeepNavigationChildView.swift in Sources */,
 				52AF934725D288ED005330D2 /* CarListViewModel.swift in Sources */,
 				75215ED825D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift in Sources */,
@@ -509,6 +516,7 @@
 				52AF934925D288ED005330D2 /* DetailView.swift in Sources */,
 				52AF933A25D288ED005330D2 /* StateView.swift in Sources */,
 				52AF934C25D288ED005330D2 /* SettingView.swift in Sources */,
+				75215F4D25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift in Sources */,
 				52AF934825D288ED005330D2 /* Car.swift in Sources */,
 				153AE2D825C8105E00250763 /* ExampleApp.swift in Sources */,
 				52AF933D25D288ED005330D2 /* ObservedObjectView.swift in Sources */,

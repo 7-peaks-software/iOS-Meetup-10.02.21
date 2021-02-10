@@ -1,5 +1,5 @@
 //
-//  3.3.1 StateObjectAndParametersView.swift
+//  3.3.3 CachedDetailsView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -25,41 +25,32 @@
 import SwiftUI
 
 extension Part3 {
-    
-    struct StateObjectAndParametersView: View {
-        @StateObject private var viewModel = ViewModel()
-        private let id: Int
+    struct CachedDetailsView: View {
+        @ObservedObject var viewModel: ViewModel
         
-        init(id: Int = 1) {
-            self.id = id
+        init(id: Int) {
+            viewModel = ViewModelProvider.cached(id: "\(id)") {
+                ViewModel(id: id)
+            }
         }
         
         var body: some View {
-            TextField("Title: ", text: $viewModel.title)
-                .onAppear() {
-                    viewModel.id = id
-                }
-                .navigationBarTitle("@StateObject" , displayMode: .inline)
+            Text("\(viewModel.details)")
         }
         
         class ViewModel: ObservableObject {
-            @Published var title: String = ""
+            @Published var details: String = ""
+            let id: Int
             
-            var id: Int? {
-                didSet {
-                    if let id = id {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                            self.title = "Title #\(id)"
-                        }
-                    } else {
-                        title = ""
-                    }
-                }
-            }
-            
-            init() {
+            init(id: Int) {
+                self.id = id
                 print("+ \(self)")
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.details = "Details fetched"
+                }
             }
         }
     }
+    
 }

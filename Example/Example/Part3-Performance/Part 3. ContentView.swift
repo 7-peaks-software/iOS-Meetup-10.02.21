@@ -30,41 +30,41 @@ struct Part3 {
         var body: some View {
             List {
                 Section(header: Text("objectWillChange")) {
-                    NavigationLink(destination: StateObjectNonPublishedView(), label: {
-                        Text("StateObject and NonPublished")
+                    LazyNavigationLink(destination: StateObjectNonPublishedView(), label: {
+                        Text("@StateObject and objectWillChange")
                     })
                     
-                    NavigationLink(destination: StateObjectPublishedView(), label: {
-                        Text("StateObject and Published")
+                    LazyNavigationLink(destination: StateObjectPublishedView(), label: {
+                        Text("@StateObject and @Published")
                     })
 
-                    NavigationLink(destination: ObservedObjectPublishedView(), label: {
-                        Text("ObservedObject and Published")
+                    LazyNavigationLink(destination: ObservedObjectPublishedView(), label: {
+                        Text("@ObservedObject and @Published")
                     })
 
-                    NavigationLink(destination: UnusedObservableObjectView(), label: {
-                        Text("Unused ObservableObject")
+                    LazyNavigationLink(destination: UnusedObservableObjectView(), label: {
+                        Text("Unused @ObservableObject")
                     })
                 }
                 
                 Section(header: Text("NavigationLink")) {
-                    NavigationLink(destination: NavigationLinkView(), label: {
+                    LazyNavigationLink(destination: NavigationLinkView(), label: {
                         Text("LazyView")
                     })
-                    NavigationLink(destination: DeepNavigationView(), label: {
+                    LazyNavigationLink(destination: DeepNavigationView(), label: {
                         Text("Deep Navigation")
                     })
                 }
                 
                 Section(header: Text("ObservableObject And Parameters")) {
-                    NavigationLink(destination: UnusedObservableObjectView(), label: {
-                        Text("StateObject")
+                    LazyNavigationLink(destination: StateObjectAndParametersView(), label: {
+                        Text("@StateObject")
                     })
-                    NavigationLink(destination: UnusedObservableObjectView(), label: {
-                        Text("ObservedObject")
+                    LazyNavigationLink(destination: ObservedObjectAndParametersView(), label: {
+                        Text("@ObservedObject")
                     })
-                    NavigationLink(destination: UnusedObservableObjectView(), label: {
-                        Text("Caching ObservedObject")
+                    LazyNavigationLink(destination: CachedObservedObjectAndParametersView(), label: {
+                        Text("Caching @ObservedObject")
                     })
                 }
                 

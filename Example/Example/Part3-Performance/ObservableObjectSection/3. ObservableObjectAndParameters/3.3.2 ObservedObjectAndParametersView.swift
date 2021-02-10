@@ -22,4 +22,36 @@
 //  THE SOFTWARE.
 //
 
-import Foundation
+import SwiftUI
+
+extension Part3 {
+    struct ObservedObjectAndParametersView: View {
+        @ObservedObject var viewModel: ViewModel
+        
+        init(id: Int = 1) {
+            viewModel = ViewModel(id: id)
+        }
+        
+        var body: some View {
+            VStack {
+                TextField("Title: ", text: $viewModel.title)
+                NonCachedDetailsView(id: viewModel.id)
+            }
+            .navigationBarTitle("@ObservedObject" , displayMode: .inline)
+        }
+        
+        class ViewModel: ObservableObject {
+            @Published var title: String = ""
+            let id: Int
+            
+            init(id: Int) {
+                self.id = id
+                print("+ \(self)")
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.title = "Title #\(id)"
+                }
+            }
+        }
+    }
+}
