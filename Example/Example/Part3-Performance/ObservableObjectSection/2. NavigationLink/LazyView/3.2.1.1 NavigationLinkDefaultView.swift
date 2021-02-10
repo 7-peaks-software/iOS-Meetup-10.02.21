@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.2.1.1 NavigationLinkDefaultView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -24,35 +24,43 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
+extension Part3 {
+    
+    struct NavigationLinkDefaultView: View {
+        var body: some View {
             List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
+                NavigationLink(destination: ChildView(), label: {
+                    Text("Child 1")
+                })
+                NavigationLink(destination: ChildView(), label: {
+                    Text("Child 2")
+                })
+                NavigationLink(destination: ChildView(), label: {
+                    Text("Child 3")
+                })
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+            .navigationBarTitle("NavigationLink" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    struct ChildView: View {
+        @ObservedObject var viewModel = ViewModel()
+        
+        var body: some View {
+            Text("Child View")
+                .padding()
+        }
+        
+        class ViewModel: ObservableObject {
+            init() {
+                print("[init] \(self)")
+            }
+            
+            deinit {
+                print("[deinit] \(self)")
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

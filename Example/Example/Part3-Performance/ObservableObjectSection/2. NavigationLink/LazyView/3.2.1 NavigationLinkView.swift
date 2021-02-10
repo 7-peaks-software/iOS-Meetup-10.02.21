@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.2.1 NavigationLinkView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -23,36 +23,26 @@
 //
 
 import SwiftUI
+import Combine
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
+extension Part3 {
+    
+    struct NavigationLinkView: View {
+        var body: some View {
             List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
+                NavigationLink(destination: NavigationLinkDefaultView(), label: {
+                    Text("NavigationLink")
+                })
+                NavigationLink(destination: NavigationLinkLazyView(), label: {
+                    Text("LazyView")
+                })
+                NavigationLink(destination: NavigationLinkLazyNavigationView(), label: {
+                    Text("LazyNavigationLink")
+                })
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+            .navigationBarTitle("LazyView" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

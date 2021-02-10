@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ViewModelCache.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -22,37 +22,25 @@
 //  THE SOFTWARE.
 //
 
-import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
-            }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-    }
+import Foundation
+
+class ViewModelProvider {
+	typealias ViewModelIdentifier = String
+	
+	private static let cache = NSMapTable<NSString, AnyObject>(keyOptions: NSPointerFunctions.Options.strongMemory, valueOptions: NSPointerFunctions.Options.weakMemory)
+
+	static func cached<VM: AnyObject>(id: ViewModelIdentifier? = nil, _ builder: () -> (VM)) -> VM {
+    let key = String(reflecting: VM.self) + String(describing: id)
+		if let vm = cache.object(forKey: key as NSString) {
+//      print("Use cached object: \(key)")
+			return vm as! VM
+		} else {
+			let vm = builder()
+			cache.setObject(vm, forKey: key as NSString)
+//      print("create new object: \(key)")
+			return vm
+		}
+	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

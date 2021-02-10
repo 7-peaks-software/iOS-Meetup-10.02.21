@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.1.1 StateObjectNonPublishedView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -23,36 +23,35 @@
 //
 
 import SwiftUI
+import Combine
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
-            }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+extension Part3 {
+    
+    struct StateObjectNonPublishedView: View {
+        @StateObject var object = NonPublishedObject()
+        
+        var body: some View {
+            Text("Counter: \(object.nonpublishedValue)")
+                .navigationBarTitle("StateObject and NonPublished" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        
+        class NonPublishedObject: ObservableObject {
+            private var subscriptions = Set<AnyCancellable>()
+            var nonpublishedValue: Int = 0
+            
+            init() {
+                Timer
+                    .publish(every: 1.0, on: .main, in: .common)
+                    .autoconnect()
+                    .sink { [weak self] _ in
+                        guard let self = self else { return }
+                        self.nonpublishedValue += 1
+                        self.objectWillChange.send()
+                    }
+                    .store(in: &subscriptions)
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RouterNavigationView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -24,35 +24,32 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
-            }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+struct RouterNavigationView: View {
+
+  typealias ViewBuilder = (Binding<Bool>) -> (AnyView)
+  
+  @State private var presented: Bool = false
+  private let builder: ViewBuilder
+  private let otherBuilders: [ViewBuilder]
+  
+  init?(_ viewBuilders: ViewBuilder...) {
+    self.init(viewBuilders)
+  }
+  
+  init?(_ viewBuilders: [ViewBuilder]) {
+    assert(viewBuilders.count > 0)
+    guard let builder = viewBuilders.first else { return nil }
+    self.builder = builder
+    self.otherBuilders = Array(viewBuilders.dropFirst())
+  }
+  
+  var body: some View {
+    ZStack {
+      builder($presented)
+      if otherBuilders.count > 0 {
+        LazyNavigationLink(destination: RouterNavigationView(otherBuilders), isActive: $presented)
+      }
     }
+  }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

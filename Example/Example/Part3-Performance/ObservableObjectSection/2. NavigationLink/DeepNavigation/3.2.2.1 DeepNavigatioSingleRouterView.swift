@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.2.2.1 DeepNavigatioSingleRouterView.swift.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -24,35 +24,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
+extension Part3 {
+    
+    struct DeepNavigatioSingleRouterView: View {
+        @State var goTo2: Bool = false
+        @State var goTo3: Bool = false
+        @State var on3Done: Bool = false
+        
+        var body: some View {
+            VStack {
+                DeepNavigationChildView(title: "Child 1", onNext: $goTo2)
+                    .fullScreenCover(isPresented: $on3Done) {
+                        Button(action: { on3Done = false }) {
+                            Text("Close")
+                        }
+                    }
+                    .navigationBarTitle("Single Router" , displayMode: .inline)
                 
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
+                NavigationLink("", destination: DeepNavigationChildView(title: "Child 2", onNext: $goTo3),
+                               isActive: $goTo2)
                 
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
+                NavigationLink("", destination: DeepNavigationChildView(title: "Child 3", onNext: $on3Done),
+                               isActive: $goTo3)
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

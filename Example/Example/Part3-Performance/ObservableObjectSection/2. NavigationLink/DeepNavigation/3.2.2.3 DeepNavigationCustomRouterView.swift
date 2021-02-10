@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.2.2.3 DeepNavigationCustomRouterView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -23,36 +23,32 @@
 //
 
 import SwiftUI
+extension Part3 {
+    
+    struct DeepNavigationCustomRouterView: View {
+        @State var on3Done: Bool = false
+        
+        var body: some View {
+            RouterNavigationView(
+                { next in
+                    AnyView(DeepNavigationChildView(title: "Child 1", onNext: next))
+                },
+                
+                { next in
+                    AnyView(DeepNavigationChildView(title: "Child 2", onNext: next))
+                },
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
+                { _ in
+                    AnyView(DeepNavigationChildView(title: "Child 3", onNext: $on3Done))
                 }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
+            )
+            .fullScreenCover(isPresented: $on3Done) {
+                Button(action: { on3Done = false }) {
+                    Text("Close")
                 }
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Custom Router" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
