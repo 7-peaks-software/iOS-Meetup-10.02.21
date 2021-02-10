@@ -35,6 +35,29 @@
 		52AF934A25D288ED005330D2 /* MVVMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933225D288ED005330D2 /* MVVMContentView.swift */; };
 		52AF934B25D288ED005330D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933325D288ED005330D2 /* LoginView.swift */; };
 		52AF934C25D288ED005330D2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF933425D288ED005330D2 /* SettingView.swift */; };
+		75215E8B25D3B28000A1277D /* Part 3. ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215E8A25D3B28000A1277D /* Part 3. ContentView.swift */; };
+		75215E9725D3BB0100A1277D /* 3.1.1 StateObjectNonPublishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215E9625D3BB0100A1277D /* 3.1.1 StateObjectNonPublishedView.swift */; };
+		75215E9A25D3BB0B00A1277D /* 3.1.2 StateObjectPublishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215E9925D3BB0B00A1277D /* 3.1.2 StateObjectPublishedView.swift */; };
+		75215EA325D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */; };
+		75215EBC25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215EBB25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift */; };
+		75215EC425D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */; };
+		75215ED125D3C69D00A1277D /* 3.2.2 NavigationLink.DeepNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215ED025D3C69D00A1277D /* 3.2.2 NavigationLink.DeepNavigation.swift */; };
+		75215ED525D3C6CB00A1277D /* 3.2.1 NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215ED425D3C6CB00A1277D /* 3.2.1 NavigationLinkView.swift */; };
+		75215ED825D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */; };
+		75215EE625D3CD0E00A1277D /* 3.1.3 ObservedObjectPublishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215EE525D3CD0E00A1277D /* 3.1.3 ObservedObjectPublishedView.swift */; };
+		75215EFF25D3CF9600A1277D /* RouterNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215EFE25D3CF9600A1277D /* RouterNavigationView.swift */; };
+		75215F0325D3CFB200A1277D /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F0125D3CFB200A1277D /* LazyView.swift */; };
+		75215F0425D3CFB200A1277D /* LazyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F0225D3CFB200A1277D /* LazyNavigationLink.swift */; };
+		75215F1725D3D35100A1277D /* 3.2.1.1 NavigationLinkDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F1625D3D35100A1277D /* 3.2.1.1 NavigationLinkDefaultView.swift */; };
+		75215F1B25D3D37300A1277D /* 3.2.1.2 NavigationLinkLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F1A25D3D37300A1277D /* 3.2.1.2 NavigationLinkLazyView.swift */; };
+		75215F1E25D3D37F00A1277D /* 3.2.1.3 NavigationLinkLazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F1D25D3D37F00A1277D /* 3.2.1.3 NavigationLinkLazyNavigationView.swift */; };
+		75215F2525D3DA7600A1277D /* 3.2.2.1 DeepNavigatioSingleRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F2425D3DA7600A1277D /* 3.2.2.1 DeepNavigatioSingleRouterView.swift */; };
+		75215F2925D3DAF500A1277D /* 3.2.2.2 DeepNavigationNestedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F2825D3DAF500A1277D /* 3.2.2.2 DeepNavigationNestedView.swift */; };
+		75215F2F25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */; };
+		75215F4225D3DD5500A1277D /* DeepNavigationChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4125D3DD5500A1277D /* DeepNavigationChildView.swift */; };
+		75215F4925D3E22300A1277D /* ViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4825D3E22300A1277D /* ViewModelProvider.swift */; };
+		75215F4D25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */; };
+		75215F5025D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +91,29 @@
 		52AF933225D288ED005330D2 /* MVVMContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMContentView.swift; sourceTree = "<group>"; };
 		52AF933325D288ED005330D2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52AF933425D288ED005330D2 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		75215E8A25D3B28000A1277D /* Part 3. ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Part 3. ContentView.swift"; sourceTree = "<group>"; };
+		75215E9625D3BB0100A1277D /* 3.1.1 StateObjectNonPublishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.1.1 StateObjectNonPublishedView.swift"; sourceTree = "<group>"; };
+		75215E9925D3BB0B00A1277D /* 3.1.2 StateObjectPublishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.1.2 StateObjectPublishedView.swift"; sourceTree = "<group>"; };
+		75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.1 StateObjectAndParametersView.swift"; sourceTree = "<group>"; };
+		75215EBB25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.1.4 UnusedObservableObjectView.swift"; sourceTree = "<group>"; };
+		75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.3 CachedObservedObjectAndParametersView.swift.swift"; sourceTree = "<group>"; };
+		75215ED025D3C69D00A1277D /* 3.2.2 NavigationLink.DeepNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.2 NavigationLink.DeepNavigation.swift"; sourceTree = "<group>"; };
+		75215ED425D3C6CB00A1277D /* 3.2.1 NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.1 NavigationLinkView.swift"; sourceTree = "<group>"; };
+		75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.2 ObservedObjectAndParametersView.swift"; sourceTree = "<group>"; };
+		75215EE525D3CD0E00A1277D /* 3.1.3 ObservedObjectPublishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.1.3 ObservedObjectPublishedView.swift"; sourceTree = "<group>"; };
+		75215EFE25D3CF9600A1277D /* RouterNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterNavigationView.swift; sourceTree = "<group>"; };
+		75215F0125D3CFB200A1277D /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		75215F0225D3CFB200A1277D /* LazyNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyNavigationLink.swift; sourceTree = "<group>"; };
+		75215F1625D3D35100A1277D /* 3.2.1.1 NavigationLinkDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.1.1 NavigationLinkDefaultView.swift"; sourceTree = "<group>"; };
+		75215F1A25D3D37300A1277D /* 3.2.1.2 NavigationLinkLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.1.2 NavigationLinkLazyView.swift"; sourceTree = "<group>"; };
+		75215F1D25D3D37F00A1277D /* 3.2.1.3 NavigationLinkLazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.1.3 NavigationLinkLazyNavigationView.swift"; sourceTree = "<group>"; };
+		75215F2425D3DA7600A1277D /* 3.2.2.1 DeepNavigatioSingleRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.2.1 DeepNavigatioSingleRouterView.swift"; sourceTree = "<group>"; };
+		75215F2825D3DAF500A1277D /* 3.2.2.2 DeepNavigationNestedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.2.2 DeepNavigationNestedView.swift"; sourceTree = "<group>"; };
+		75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.2.2.3 DeepNavigationCustomRouterView.swift"; sourceTree = "<group>"; };
+		75215F4125D3DD5500A1277D /* DeepNavigationChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepNavigationChildView.swift; sourceTree = "<group>"; };
+		75215F4825D3E22300A1277D /* ViewModelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProvider.swift; sourceTree = "<group>"; };
+		75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.2 NonCachedDetailsView.swift"; sourceTree = "<group>"; };
+		75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.3.3 CachedDetailsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +149,7 @@
 				52AF931225D288ED005330D2 /* Common */,
 				52AF930D25D288ED005330D2 /* Part1-Animation */,
 				52AF931425D288ED005330D2 /* Part2-PropertyWrappers */,
+				75215E8825D3B24800A1277D /* Part3-Performance */,
 				153AE2D725C8105E00250763 /* ExampleApp.swift */,
 				153AE2D925C8105E00250763 /* ContentView.swift */,
 				153AE2DB25C8106200250763 /* Assets.xcassets */,
@@ -269,6 +316,108 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		75215E8825D3B24800A1277D /* Part3-Performance */ = {
+			isa = PBXGroup;
+			children = (
+				75215E8A25D3B28000A1277D /* Part 3. ContentView.swift */,
+				75215E8E25D3B44E00A1277D /* ObservableObjectSection */,
+			);
+			path = "Part3-Performance";
+			sourceTree = "<group>";
+		};
+		75215E8E25D3B44E00A1277D /* ObservableObjectSection */ = {
+			isa = PBXGroup;
+			children = (
+				75215E9C25D3BB6300A1277D /* 1. ObjectWillChange */,
+				75215EB625D3BEB300A1277D /* 2. NavigationLink */,
+				75215E9E25D3BB8F00A1277D /* 3. ObservableObjectAndParameters */,
+			);
+			path = ObservableObjectSection;
+			sourceTree = "<group>";
+		};
+		75215E9C25D3BB6300A1277D /* 1. ObjectWillChange */ = {
+			isa = PBXGroup;
+			children = (
+				75215E9625D3BB0100A1277D /* 3.1.1 StateObjectNonPublishedView.swift */,
+				75215E9925D3BB0B00A1277D /* 3.1.2 StateObjectPublishedView.swift */,
+				75215EE525D3CD0E00A1277D /* 3.1.3 ObservedObjectPublishedView.swift */,
+				75215EBB25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift */,
+			);
+			path = "1. ObjectWillChange";
+			sourceTree = "<group>";
+		};
+		75215E9E25D3BB8F00A1277D /* 3. ObservableObjectAndParameters */ = {
+			isa = PBXGroup;
+			children = (
+				75215F5725D3EBB500A1277D /* 1. StateObject */,
+				75215F5825D3EBBE00A1277D /* 2. ObservedObject */,
+				75215F5A25D3EBCD00A1277D /* 3. Cahced ObservedObject */,
+			);
+			path = "3. ObservableObjectAndParameters";
+			sourceTree = "<group>";
+		};
+		75215EB625D3BEB300A1277D /* 2. NavigationLink */ = {
+			isa = PBXGroup;
+			children = (
+				75215F3D25D3DD1100A1277D /* LazyView */,
+				75215F3E25D3DD2000A1277D /* DeepNavigation */,
+			);
+			path = "2. NavigationLink";
+			sourceTree = "<group>";
+		};
+		75215F3D25D3DD1100A1277D /* LazyView */ = {
+			isa = PBXGroup;
+			children = (
+				75215F0225D3CFB200A1277D /* LazyNavigationLink.swift */,
+				75215F0125D3CFB200A1277D /* LazyView.swift */,
+				75215ED425D3C6CB00A1277D /* 3.2.1 NavigationLinkView.swift */,
+				75215F1625D3D35100A1277D /* 3.2.1.1 NavigationLinkDefaultView.swift */,
+				75215F1A25D3D37300A1277D /* 3.2.1.2 NavigationLinkLazyView.swift */,
+				75215F1D25D3D37F00A1277D /* 3.2.1.3 NavigationLinkLazyNavigationView.swift */,
+			);
+			path = LazyView;
+			sourceTree = "<group>";
+		};
+		75215F3E25D3DD2000A1277D /* DeepNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				75215EFE25D3CF9600A1277D /* RouterNavigationView.swift */,
+				75215F4125D3DD5500A1277D /* DeepNavigationChildView.swift */,
+				75215ED025D3C69D00A1277D /* 3.2.2 NavigationLink.DeepNavigation.swift */,
+				75215F2425D3DA7600A1277D /* 3.2.2.1 DeepNavigatioSingleRouterView.swift */,
+				75215F2825D3DAF500A1277D /* 3.2.2.2 DeepNavigationNestedView.swift */,
+				75215F2E25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift */,
+			);
+			path = DeepNavigation;
+			sourceTree = "<group>";
+		};
+		75215F5725D3EBB500A1277D /* 1. StateObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215EA225D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift */,
+			);
+			path = "1. StateObject";
+			sourceTree = "<group>";
+		};
+		75215F5825D3EBBE00A1277D /* 2. ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215ED725D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift */,
+				75215F4C25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift */,
+			);
+			path = "2. ObservedObject";
+			sourceTree = "<group>";
+		};
+		75215F5A25D3EBCD00A1277D /* 3. Cahced ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				75215F4825D3E22300A1277D /* ViewModelProvider.swift */,
+				75215EC325D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift */,
+				75215F4F25D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift */,
+			);
+			path = "3. Cahced ObservedObject";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,28 +488,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75215ED125D3C69D00A1277D /* 3.2.2 NavigationLink.DeepNavigation.swift in Sources */,
+				75215F0425D3CFB200A1277D /* LazyNavigationLink.swift in Sources */,
+				75215E8B25D3B28000A1277D /* Part 3. ContentView.swift in Sources */,
+				75215ED525D3C6CB00A1277D /* 3.2.1 NavigationLinkView.swift in Sources */,
+				75215E9A25D3BB0B00A1277D /* 3.1.2 StateObjectPublishedView.swift in Sources */,
+				75215EFF25D3CF9600A1277D /* RouterNavigationView.swift in Sources */,
 				52AF933525D288ED005330D2 /* basic-animation.swift in Sources */,
+				75215F0325D3CFB200A1277D /* LazyView.swift in Sources */,
+				75215F1E25D3D37F00A1277D /* 3.2.1.3 NavigationLinkLazyNavigationView.swift in Sources */,
 				52AF934025D288ED005330D2 /* PhoneValidator.swift in Sources */,
+				75215EE625D3CD0E00A1277D /* 3.1.3 ObservedObjectPublishedView.swift in Sources */,
 				52AF933825D288ED005330D2 /* Animatable.swift in Sources */,
 				52AF933E25D288ED005330D2 /* OTPView.swift in Sources */,
 				52AF934A25D288ED005330D2 /* MVVMContentView.swift in Sources */,
 				52AF934325D288ED005330D2 /* PropertyWrapperExampleDetailView.swift in Sources */,
+				75215F1725D3D35100A1277D /* 3.2.1.1 NavigationLinkDefaultView.swift in Sources */,
 				52AF933925D288ED005330D2 /* PCircle.swift in Sources */,
 				52AF934525D288ED005330D2 /* Part2ContentView.swift in Sources */,
+				75215E9725D3BB0100A1277D /* 3.1.1 StateObjectNonPublishedView.swift in Sources */,
 				52AF933F25D288ED005330D2 /* PropertyWrapperPhoneNumber.swift in Sources */,
+				75215F2F25D3DB7700A1277D /* 3.2.2.3 DeepNavigationCustomRouterView.swift in Sources */,
 				52AF933725D288ED005330D2 /* AnimatableModifier.swift in Sources */,
 				153AE2DA25C8105E00250763 /* ContentView.swift in Sources */,
+				75215EC425D3BFC900A1277D /* 3.3.3 CachedObservedObjectAndParametersView.swift.swift in Sources */,
+				75215EA325D3BBBD00A1277D /* 3.3.1 StateObjectAndParametersView.swift in Sources */,
+				75215F4925D3E22300A1277D /* ViewModelProvider.swift in Sources */,
+				75215F2925D3DAF500A1277D /* 3.2.2.2 DeepNavigationNestedView.swift in Sources */,
 				52AF934125D288ED005330D2 /* AppSettings.swift in Sources */,
+				75215F2525D3DA7600A1277D /* 3.2.2.1 DeepNavigatioSingleRouterView.swift in Sources */,
 				52AF934425D288ED005330D2 /* PropertyWrapperExampleView.swift in Sources */,
 				52AF934B25D288ED005330D2 /* LoginView.swift in Sources */,
 				52AF933C25D288ED005330D2 /* EnvironmentObjectView.swift in Sources */,
 				52AF934625D288ED005330D2 /* UserSettings.swift in Sources */,
+				75215EBC25D3BF4900A1277D /* 3.1.4 UnusedObservableObjectView.swift in Sources */,
+				75215F5025D3E7F000A1277D /* 3.3.3 CachedDetailsView.swift in Sources */,
+				75215F4225D3DD5500A1277D /* DeepNavigationChildView.swift in Sources */,
 				52AF934725D288ED005330D2 /* CarListViewModel.swift in Sources */,
+				75215ED825D3C6F000A1277D /* 3.3.2 ObservedObjectAndParametersView.swift in Sources */,
 				52AF933625D288ED005330D2 /* Transformation.swift in Sources */,
+				75215F1B25D3D37300A1277D /* 3.2.1.2 NavigationLinkLazyView.swift in Sources */,
 				52AF934225D288ED005330D2 /* PropertyWrapperUserDefaults.swift in Sources */,
 				52AF934925D288ED005330D2 /* DetailView.swift in Sources */,
 				52AF933A25D288ED005330D2 /* StateView.swift in Sources */,
 				52AF934C25D288ED005330D2 /* SettingView.swift in Sources */,
+				75215F4D25D3E7EA00A1277D /* 3.3.2 NonCachedDetailsView.swift in Sources */,
 				52AF934825D288ED005330D2 /* Car.swift in Sources */,
 				153AE2D825C8105E00250763 /* ExampleApp.swift in Sources */,
 				52AF933D25D288ED005330D2 /* ObservedObjectView.swift in Sources */,

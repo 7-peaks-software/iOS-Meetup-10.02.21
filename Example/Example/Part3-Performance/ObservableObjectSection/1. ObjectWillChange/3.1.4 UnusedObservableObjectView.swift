@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.1.4 UnusedObservableObjectView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -20,39 +20,54 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-//
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
+extension Part3 {
+    
+    struct UnusedObservableObjectView: View {
+        @StateObject var object = StateObjectPublishedView.PublishedObject()
+        
+        var body: some View {
+            ChildView()
+                .navigationBarTitle("Unused ObservableObject" , displayMode: .inline)
+        }
+        
+        struct ChildView: View {
+            @ObservedObject var viewModel = ViewModel()
+            
+            var body: some View {
+                VStack {
+                    Text("ViewModel created \(viewModel.counter) times")
+                        .padding()
+                    Button( action: { viewModel.reset() }) {
+                        Text("Reset")
+                    }
                 }
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+            
+            class ViewModel: ObservableObject {
+                static var counter: Int = 0
+                @Published var counter: Int
+                
+                init() {
+                    Self.counter += 1
+                    counter = Self.counter
+                    
+                    print("[init] \(self)")
+                }
+                
+                func reset() {
+                    Self.counter = 0
+                    counter = 0
+                }
+                
+                deinit {
+                    print("[deinit] \(self)")
+                }
+            }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LazyNavigationLink.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -24,35 +24,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
-            }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+struct LazyNavigationLink: View {
+	private var link: AnyView
+	
+    init<DestinationContent: View, LabelContent: View>(destination: @autoclosure @escaping () -> DestinationContent, label: @escaping () -> LabelContent) {
+        link = AnyView(NavigationLink(destination: LazyView(destination()), label: { label() }))
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    init<DestinationContent: View>(_ titleKey: LocalizedStringKey = "", destination: @autoclosure @escaping () -> DestinationContent, isActive: Binding<Bool>) {
+        link = AnyView(NavigationLink(titleKey, destination: LazyView(destination()), isActive: isActive))
     }
+        
+	var body: some View {
+		link		
+	}
 }

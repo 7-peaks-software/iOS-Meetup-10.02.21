@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.1.2 StateObjectPublishedView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -22,37 +22,36 @@
 //  THE SOFTWARE.
 //
 
+
 import SwiftUI
+import Combine
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
-            }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+extension Part3 {
+    
+    struct StateObjectPublishedView: View {
+        @StateObject var object = PublishedObject()
+        
+        var body: some View {
+            Text("Counter: \(object.publishedValue)")
+                .navigationBarTitle("StateObject and Published" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        
+        class PublishedObject: ObservableObject {
+            private var subscriptions = Set<AnyCancellable>()
+            @Published var publishedValue: Int = 0
+            
+            init() {
+                Timer
+                    .publish(every: 1.0, on: .main, in: .common)
+                    .autoconnect()
+                    .sink { [weak self] _ in
+                        guard let self = self else { return }
+                        self.publishedValue += 1
+                    }
+                    .store(in: &subscriptions)
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

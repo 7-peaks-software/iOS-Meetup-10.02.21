@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.3.2 NonCachedDetailsView.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -22,37 +22,34 @@
 //  THE SOFTWARE.
 //
 
+
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
+extension Part3 {
+    struct NonCachedDetailsView: View {
+        @ObservedObject var viewModel: ViewModel
+        
+        init(id: Int) {
+            viewModel = ViewModel(id: id)
+        }
+        
+        var body: some View {
+            Text("\(viewModel.details)")
+        }
+        
+        class ViewModel: ObservableObject {
+            @Published var details: String = ""
+            let id: Int
+            
+            init(id: Int) {
+                self.id = id
+                print("+ \(self)")
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.details = "Details fetched"
                 }
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }

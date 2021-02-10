@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  3.2.2 NavigationLink.DeepNavigation.swift
 //  Example MeetUp 10.02.2021
 //
 //  Copyright (c) 2021 SevenPeaks Software
@@ -24,35 +24,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
+extension Part3 {
+    
+    struct DeepNavigationView: View {
+        var body: some View {
             List {
-                Section(header: Text("Part 1 - Animation")) {
-                    NavigationLink(
-                        "Basic Animation",
-                        destination: BasicContentView()
-                    )
-                }
-                
-                Section(header: Text("Part 2 - Property wrappers & MVVM")) {
-                    NavigationLink("Property wrappers & MVVM", destination: Part2ContentView())
-                }
-                
-                // TODO: Andrei - update the section
-                Section(header: Text("Part 3 - Performance and Memory Management")) {
-                    NavigationLink("Performance and Memory Management", destination: Part3.ContentView())
-                }
+                NavigationLink(destination: DeepNavigatioSingleRouterView(), label: {
+                    Text("Single Router")
+                })
+                NavigationLink(destination: DeepNavigationNestedView(), label: {
+                    Text("Nested NavigationLink")
+                })
+                NavigationLink(destination: DeepNavigationCustomRouterView(), label: {
+                    Text("Custom Router")
+                })
             }
-            .navigationTitle("Swift UI")
-            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Deep Navigation" , displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    }    
 }
